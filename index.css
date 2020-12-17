@@ -1,0 +1,11 @@
+body {
+  background-image: url('background.png');
+  color: white;
+  font-family: Verdana;
+}
+.header {
+  margin-left: 2em;
+}
+.tab {
+  padding-right: 1em;
+}
