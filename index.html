@@ -1,30 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bem-vindo</title>
-  <link rel="stylesheet" href="index.css">
-  <meta charset="utf-8">
-  <meta name="author" content="Miguel Rodrigues Carrilho Borges">
-  <meta name="description" content="Site pessoal do autor. Contem as informações e projetos do mesmo.">
+    <title>Miguel Borges</title>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Miguel Rodrigues Carrilho Borges">
+    <meta name="description" content="Site pessoal do autor.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <div class="header">
-    <p class="tab" onclick="location.href='./index.html'">Main page</p>
-    <p class="tab" onclick="location.href='./about me.html'">About me</p>
-    <p class="tab" onclick="location.href='./projetos.html'">Projetos</p>
-  </div>
-  <div class="welcome">
-    <h1>Bem-vindo</h1>
-  </div>
-  <div style="text-align:center;">
-    <h1>Ola</h1>
-    <p>Estou a tentar html pela primeira vez :). O site está sobre trabalho. Devo atualizar devagar porque estou ainda a aprender as linguagens para tal.</p>
-    <hr>
-    <div class="SocialMedia">
-      <img src="steam.png" width="32" height="32" onclick="location.href='https://steamcommunity.com/id/o__boga'" alt="Steam">
-      <img src="github.png" width="32" height="32" onclick="location.href='https://github.com/miguelrcborges/'" alt="Github">
-      <img src="spotify.png" width="32" height="32" onclick="location.href='https://open.spotify.com/artist/7cLB1nipcXLsi6ZMH83dGm'" alt="Spotify">
+    <div id="box">
+        <h1 style="text-align: center;">Miguel Borges's Page</h1>
+        <div id=grid>
+            <div id="logo">
+                <p><pre>                                              NF**:*FN                                              
+                                           MV*::::::::*VM                                           
+                                       NFV*::::::::::::::*VFN                                       
+                                    MV*::::::::::::::::::::::*VM                                    
+                                NF*:...::::::::::::::::::::::::::VFN                                
+                             MV*:.....::::::::::::::::::::::::::::::*VM                             
+                         NF*:........::::::::::::::::::::::::::::::::::**FN                         
+                      MV*............::::::::::::::::::::::::::::::::::::::*VM                      
+                  NF*:..............:::::::::::::::::::::::::::::::::::::::::::*FN                  
+               MV*.................:::::::::::::::::::::::::::::::::::::::::::::::*VM               
+           NF*:..................:::::::::::::::::::::::::::::::::::::::::::::::::::::*FN           
+        MV*.....................:::::::::::::::::::::::::::::::::::::::::::::::::::::::::*VM        
+    NV*:......................:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*FN    
+ MV*........................:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*VFM 
+:..........................:::::::::::::::::::::*VF**::::::::::::::::::::::::::::::::::::::::*******
+.........................:::::::::::::::::::*VFN     MV*:::::::::::::::::::::::::::::::::::*********
+......................:::::::::::::::::::*FM            NFV*::::::::::::::::::::::::::::************
+....................:::::::::::::::::*VF                    MV*:::::::::::::::::::::::**************
+.................:::::::::::::::::*VM                          MF**:::::::::::::::::****************
+..............::::::::::::::::*VFN                                 MV**::***************************
+..........:::::::::::::::::*VM                                        MFV**********VV*************VV
+...::::::::::::::::::::::FN                                               M******VV************VVVVV
+:::::::::::::::::::::::::N                                                 ****VVV***********VVVVVVV
+:::::::::::::::::::::::::N                                                 *VVVV***********VVVVVVVVV
+:::::::::::::::::::::::::N                                                 VVV**********VVVVVVVVVVVV
+:::::::::::::::::::::::::N                                                 V**********VVVVVVVVVVVVVV
+:::::::::::::::::::::::::N                                                 V********VVVVVVVVVVVVVVVV
+:::::::::::::::::::::::::N                                                 V******VVVVVVVVVVVVVVVVVV
+:::::::::::::::::::::::::N                                                 V****VVVVVVVVVVVVVVVVVVVV
+:::::::::::::::::::::::::N                                                 V*VVVVVVVVVVVVVVVVVVVVVVV
+:::::::::::::::::::::::::N                                                 VVVVVVVVVVVVVVVVVVVVVVVVV
+:::::::::::::::::::::::**N                                                 VVVVVVVVVVVVVVVVVVVVVVVVV
+:::::::::::::::::::::****N                                                 VVVVVVVVVVVVVVVVVVVVVVVVV
+:::::::::::::::::********N                                                 VVVVVVVVVVVVVVVVVVVVVVVVV
+::::::::::::::***********N                                                 VVVVVVVVVVVVVVVVVVVVVVVVV
+::::::::::::::***********MN                                               MVVVVVVVVVVVVVVVVVVVVVVVVV
+::::::::::*****************VFN                                        NMFVVVVVVVVVVVVVVVVVVVVVVVVVVV
+::::::*************************VM                                  MFFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+*:::******************************VFN                          NMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+**************************************VM                    MFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+*****************************************VMN            NMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+*****************************************VVVVFM      NMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+***************************************VVVVVVVVVFMMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+ MV**********************************VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMM 
+    NFV****************************VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMN    
+        MF***********************VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMM        
+           NMV*****************VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMN           
+               MFV***********VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMM               
+                  NMV******VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMN                  
+                      MFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMN                      
+                         NMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMN                         
+                             NMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMN                             
+                                NMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVFMN                                
+                                    NMFVVVVVVVVVVVVVVVVVVVVVVFMN                                    
+                                       NMFVVVVVVVVVVVVVVVVFMN                                       
+                                           NMFVVVVVVVVFMN                                           </pre></p>
+            </div>
+            <div id="right">
+                <div id="summary">
+                    <p><pre>Hello! I'm a portuguese bioengineer student
+in FEUP/ICBAS. Even though I'm a bioengineer
+student, I like to code. I'm currently 19.</pre></p>
+                </div>
+                <!--<div id="nav">
+                    <p style="margin-bottom: 5px;">Pages:</p>
+                    <ul style="margin-top: 0px;">
+                        <li>Projects</li>
+                    </ul>
+                </div>-->
+                <div id="mediagroup">
+                    <h2 style="margin-bottom:5px">Check me out on these platforms!</h2>
+                    <div id="mediabox">
+                        <img id="media" src="steam.png" width="32" height="32" onclick="location.href='https://steamcommunity.com/id/o__boga'" alt="Steam">
+                        <img id="media" src="github.png" width="32" height="32" onclick="location.href='https://github.com/miguelrcborges/'" alt="Github">
+                        <img id="media" src="spotify.png" width="32" height="32" onclick="location.href='https://open.spotify.com/artist/7cLB1nipcXLsi6ZMH83dGm'" alt="Spotify">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <b>>_</b>
     </div>
-  </div>
 </body>
 </html>
