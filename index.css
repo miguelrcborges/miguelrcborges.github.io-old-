@@ -32,7 +32,7 @@ a:visited {
     color: white;
 }
 
-#box2 {
+#box2, #proj2logo, #proj2summ {
     display: none
 }
 
@@ -52,9 +52,11 @@ a:visited {
   user-select: none;
 }
 
-#logo, #ladderlogo {
+#logo, #proj1logo, #proj2logo {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 5px;
+    width: 360px;
+    height: 360px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -89,8 +91,8 @@ a:visited {
     margin-top: 100px;
 }
 
-#Return, #Previous, #Next {
-    background: rgba(255,255,255,0.8);
+.Button {
+    background: rgba(255,255,255,0.2);
     color: black;
     display: flex;
     justify-content: center;
@@ -106,7 +108,11 @@ a:visited {
     user-select: none;
 }
 
-#Return:hover {
+.Active {
+    background: rgba(255,255,255,0.8);
+}
+
+.Active:hover {
     cursor: pointer;
     background: rgba(255,255,255,0.85);
 }
@@ -115,6 +121,3 @@ a:visited {
     cursor: pointer;
 }
 
-#Previous, #Next {
-    background: rgba(255,255,255,0.2);
-}
